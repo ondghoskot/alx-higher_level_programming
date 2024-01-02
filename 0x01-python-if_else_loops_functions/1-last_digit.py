@@ -8,7 +8,8 @@ elif ld == 0:
     st = "0"
 else:
     st = "less than 6 and not 0"
-if number >= 0:
+if number > 0 or number == 0:
     print(f"Last digit of {number} is {ld} and is {st}")
 else:
-    print(f"Last digit of {- number} is {ld} and is {st}")
+    ld *= -1
+    print(f"Last digit of {number} is {ld} and is {st}")
