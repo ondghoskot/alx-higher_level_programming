@@ -2,7 +2,7 @@
 def uppercase(str):
     uc = 0
     for l in str:
-        if ord(l) >= ord('a') and ord(c) <= ord('z'):
+        if ord(l) >= ord('a') and ord(l) <= ord('z'):
             uc = 32
         else:
             upper = 0
