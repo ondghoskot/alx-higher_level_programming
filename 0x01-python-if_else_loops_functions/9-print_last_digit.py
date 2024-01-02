@@ -5,4 +5,4 @@ def print_last_digit(number):
     else:
         ld *= -1
     print("{:d}".format(ld), end='')
-    return digit
+    return ld
