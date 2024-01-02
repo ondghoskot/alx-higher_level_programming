@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-ld = abs(number) % 10
+ld = number % 10
 if ld > 5:
     st = "greater than 5"
 elif ld == 0:
