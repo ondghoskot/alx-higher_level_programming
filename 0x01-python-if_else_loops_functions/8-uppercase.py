@@ -7,4 +7,4 @@ def uppercase(str):
         else:
             upper = 0
         print("{:c}".format(ord(c) - uc), end='')
-    print(" ")
+    print("")
