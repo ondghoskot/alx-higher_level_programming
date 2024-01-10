@@ -1,2 +1,5 @@
 #!/usr/bin/python3
-import 
+from add_0 import add
+a = 1
+b = 2
+print("{:d} + {:d} = {:d}".format(add(a, b)))
