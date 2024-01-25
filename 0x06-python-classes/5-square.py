@@ -11,7 +11,7 @@ class Square:
                 size: integer that represents the size of the square.
         """
         self.__size = size
-        
+ 
     @property
     def size(self):
         """the getter method in order to retrieve size"""
