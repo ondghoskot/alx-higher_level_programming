@@ -4,10 +4,12 @@
 
 class Rectangle:
     """
-    Rectangle defined its width and height attributes, and perimeter and area methods
+    Rectangle defined its width and height attributes,
+    and perimeter and area methods
 
     Attributes:
-        number_of_instances: public class attribute representing number of instances
+        number_of_instances: public class attribute
+        representing number of instances
     """
     number_of_instances = 0
 
@@ -30,6 +32,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__width = width
         self.__height = height
+        Rectangle.number.number_of_instances += 1
 
     @property
     def width(self):
