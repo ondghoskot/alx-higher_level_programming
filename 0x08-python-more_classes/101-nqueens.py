@@ -2,6 +2,7 @@
 
 import sys
 
+
 def is_safe(board, row, col, N):
     """Check if it's safe to place a queen at board[row][col]"""
     # Check this row on left side
@@ -21,6 +22,7 @@ def is_safe(board, row, col, N):
 
     return True
 
+
 def solve_n_queens_util(board, col, N, solutions):
     """Recursive utility function to solve N queens problem"""
     if col >= N:
@@ -38,8 +40,8 @@ def solve_n_queens_util(board, col, N, solutions):
             board[i][col] = 1
             res = solve_n_queens_util(board, col + 1, N, solutions) or res
             board[i][col] = 0
-
     return res
+
 
 def solve_n_queens(N):
     """Solves the N queens problem"""
@@ -59,10 +61,10 @@ def solve_n_queens(N):
     for sol in solutions:
         print(sol)
 
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: nqueens N")
         sys.exit(1)
 
     solve_n_queens(sys.argv[1])
-
