@@ -27,9 +27,9 @@ def solve_n_queens_util(board, col, N, solutions):
         solution = []
         for i in range(N):
             for j in range(N):
-                solution.append('Q' if board[i][j] == 1 else '.')
-            solution.append('\n')
-        solutions.append(''.join(solution))
+                if board[i][j] == 1:
+                    solution.append([i, j])
+        solutions.append(solution)
         return True
 
     res = False
