@@ -22,7 +22,7 @@ class Rectangle:
         if height < 0:
             raise ValueError("height must be >= 0")
         self.__width = width
-        seld.__height = height
+        self.__height = height
 
     @width.getter
     def width(self):
