@@ -24,4 +24,17 @@ TypeError: div must be a number
 Traceback (most recent call last):
 ZeroDivisionError: division by zero
 
+>>> matrix = [[2, 4, 6, 8], [3, 5, 7, 9]]
+>>> matrix_divided()
+Traceback (most recent call last):
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
 
+>>> matrix = []
+>>> matrix_divided(matrix, 4)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix = None
+>>> matrix_divided(matrix, 4)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
