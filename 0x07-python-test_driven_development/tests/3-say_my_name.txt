@@ -7,15 +7,11 @@ My name is anass chtioui
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name("anass", chtioui)
-Traceback (most recent call last):
-NameError: name 'chtioui' is not defined
-
->>> say_my_name("anass")
+>>> say_my_name("anass", "")
 My name is anass 
 
->>> say_my_name("anass", )
-My name is anass
+>>> say_my_name("Heisenberg")
+My name is Heisenberg
 
 >>> say_my_name()
 Traceback (most recent call last):
