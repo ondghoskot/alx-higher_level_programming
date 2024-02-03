@@ -1,22 +1,23 @@
 >>> say_my_name = __import__('3-say_my_name').say_my_name
 
->>> say_my_name("anass", "chtioui")
+>>> say_my_name("Anass", "Chtioui")
 My name is anass chtioui
 
->>> say_my_name(['a', 'n', 'a', 's', 's'], "chtioui")
+>>> say_my_name(['a', 'n', 'a', 's', 's'], "Chtioui")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name("anass", "")
-My name is anass 
-
->>> say_my_name("Heisenberg")
+>>> say_my_name("Heisenberg", "")
 My name is Heisenberg
 
 >>> say_my_name()
 Traceback (most recent call last):
 TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 
->>> say_my_name("anass", 99)
+>>> say_my_name("Anass", 99)
 Traceback (most recent call last):
 TypeError: last_name must be a string
+
+>>> say_my_name("Dwight", "Kurt", "Schrute")
+Traceback (most recent call last):
+TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
