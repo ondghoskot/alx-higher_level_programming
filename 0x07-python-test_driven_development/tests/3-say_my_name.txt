@@ -28,3 +28,7 @@ TypeError: first_name must be a string
 
 >>> say_my_name("Heisenberg")
 My name is Heisenberg
+
+>>> say_my_name(99)
+Traceback (most recent call last):
+TypeError: first_name must be a string
