@@ -4,10 +4,10 @@
 
 class MyInt(int):
     """subclass of int that has == and != inverted"""
-    def __el__(self, other):
+    def __eq__(self, other):
         """Returns True if slef != other"""
         return int(self) != other
 
-    def __nl__(self, other):
-        """Returns True if sekf == other"""
+    def __ne__(self, other):
+        """Returns False if self == other"""
         return int(self) == other
