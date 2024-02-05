@@ -11,5 +11,5 @@ class Square(Rectangle):
         super().__init__(size, size)
 
     def __str__(self):
-        """Description of square"""
+        """Description of square as string representation"""
         return "[Square] {:d}/{:d}".format(self.__width, self.__height)
