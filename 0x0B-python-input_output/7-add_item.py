@@ -7,7 +7,7 @@ save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 
 try:
     cla = load_from_json_file("add_item.json")
-except:
+except FileNotFoundError:
     cla = []
 cla.extend(sys.argv[1:])
 save_to_json_file(cla, "add_item.json")
