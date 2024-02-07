@@ -12,10 +12,11 @@ class Student:
 
     def to_json(self, attrs=None):
         """dict representation of an instance"""
+        if atrrs is None:
+            return self.__dict__
         new_dict = {}
         if isinstance(attrs, list):
             for strgs in attrs:
                 if isinstance(strgs, str) and strgs in self.__dict__:
-                    new_dict = self.__dict__[strgs]
+                    new_dict[strgs] = self.__dict__[strgs]
             return new_dict
-        return self.__dict__
