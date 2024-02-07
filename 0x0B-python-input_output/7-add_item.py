@@ -6,7 +6,8 @@ save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 
 
 try:
-    CLA = load_from_json_file("add_item.json")
+    cla = load_from_json_file("add_item.json")
 except:
-    CLA.extend(sys.argv[1:])
-    save_to_json_file(CLA, "add_item.json")
+    cla = []
+cla.extend(sys.argv[1:])
+save_to_json_file(CLA, "add_item.json")
