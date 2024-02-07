@@ -10,4 +10,4 @@ try:
 except:
     cla = []
 cla.extend(sys.argv[1:])
-save_to_json_file(CLA, "add_item.json")
+save_to_json_file(cla, "add_item.json")
