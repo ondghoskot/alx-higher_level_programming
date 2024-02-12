@@ -37,10 +37,10 @@ class Square(Rectangle):
             for key, value in kwargs.items():
                 setattr(self, key, value)
 
-    def to_dictionary(self:
+    def to_dictionary(self):
         """returns dictionary reprsentation of the class"""
-        attributes = ["id", "size", "x", "y"]
         dicty = {}
-        for i in attributes:
+        attr = ["id", "size", "x"]
+        for i in attr:
             dicty[i] = getattr(self, i)
         return dicty
