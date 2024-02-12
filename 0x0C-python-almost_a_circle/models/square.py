@@ -40,7 +40,7 @@ class Square(Rectangle):
     def to_dictionary(self):
         """returns dictionary reprsentation of the class"""
         dicty = {}
-        attr = ["id", "size", "x"]
+        attr = ["id", "size", "x", "y"]
         for i in attr:
             dicty[i] = getattr(self, i)
         return dicty
