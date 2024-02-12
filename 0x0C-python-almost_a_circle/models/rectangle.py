@@ -76,7 +76,7 @@ class Rectangle(Base):
     def display(self):
         """prints rectangle using '#'"""
         print("\n" * self.y, end="")
-        print("\n".join([" " * self.x + "#" * self.width] * self.height))
+        print(("\n" + " " * self.x + "#" * self.width) * self.height)
 
     def __str__(self):
         """returns string representatin of the class"""
