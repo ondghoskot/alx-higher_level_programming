@@ -55,12 +55,12 @@ class Rectangle(Base):
             raise ValueError("x must be >= 0")
 
     @property
-    def x(self):
+    def y(self):
         """gets y"""
         return self.__y
 
     @y.setter
-      def y(self, value):
+    def y(self, value):
         """sets y"""
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
