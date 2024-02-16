@@ -33,7 +33,6 @@ class Base:
     def save_to_file(cls, list_objs):
         """writes the JSON string representation
         to a file"""
-        lis = []
         if list_objs is None:
             return
         for i in list_objs:
