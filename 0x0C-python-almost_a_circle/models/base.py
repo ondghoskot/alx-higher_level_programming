@@ -2,6 +2,7 @@
 """Defines a class called Base"""
 import json
 
+
 class Base:
     """class with a private attr, it will be
     the base of all other classes in this project"""
