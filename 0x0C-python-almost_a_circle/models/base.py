@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a class called Base"""
 import json
+import turtle
 
 
 class Base:
@@ -40,3 +41,26 @@ class Base:
             lis.append(i.to_dictionary())
         with open("{}.json".format(cls.__name__), "w") as file0:
             file0.write((cls.to_json_string(lis)))
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """opens a window and draws all the rectangles and squares"""
+        turtle.Screen()
+        for r in list_rectangle:
+            turtle.setpos(r.x, r.y)
+            turtle.color(green)
+            turtle.pendown()
+            for i in range(2):
+                turtle.forward(r.width)
+                turtle.right(90)
+                turtle.down(r.height)
+                turtle.right(90)
+            turtle.penup()
+        for s in list_squares:
+            turtle.setpos(s.x, s.y)
+            turtle.color(red)
+            turtle.pendown()
+            for j in range(4):
+                turtle.forward(s.size)
+                turtle.right(90)
+        turtle.done()
