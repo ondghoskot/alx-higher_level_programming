@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-cla = process.argv[2];
-occ = Number(cla);
+const cla = process.argv[2];
+const occ = Number(cla);
 
 if (!isNaN(cla)) {
   if (occ > 0) {
